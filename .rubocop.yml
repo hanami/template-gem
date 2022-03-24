@@ -1,0 +1,31 @@
+# Please keep AllCops, Bundler, Style, Metrics groups and then order cops
+# alphabetically
+AllCops:
+  SuggestExtensions: false
+inherit_from:
+  - https://raw.githubusercontent.com/hanami/devtools/main/.rubocop.yml
+Layout/LineLength:
+  Exclude:
+    - Gemfile
+Lint/EmptyFile:
+  Exclude:
+    - "spec/fixtures/**/*.rb"
+Naming/HeredocDelimiterNaming:
+  Enabled: false
+Naming/MethodParameterName:
+  AllowedNames:
+    - fs
+Style/AccessorGrouping:
+  Enabled: false
+Style/BlockDelimiters:
+  Enabled: false
+Style/CommentedKeyword:
+  Enabled: false
+Style/LambdaCall:
+  Enabled: false
+Style/TrailingCommaInArguments:
+  Enabled: false
+Style/TrailingCommaInArrayLiteral:
+  Enabled: false
+Style/TrailingCommaInHashLiteral:
+  Enabled: false
